@@ -27,6 +27,8 @@ services:
     tty: true
     volumes:
       - database:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
     networks:
       - local
 
